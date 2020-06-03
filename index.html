@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User survey form</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Vehicle Claims Experience Survey Form</title>
 </head>
 <body>
     <div class="container">
-        <head>
-            <h1 id="title">Online Survey</h1>
+        <header>
+            <h1 id="title">Vehicle Claims Experience Survey</h1>
             <p id="description">Thank you for taking the time to fill in our short survey.</p>
-        </head>
+        </header>
         
         <form action="" id="survey-form">
             <div class="form-group">
@@ -19,15 +20,40 @@
                 <label for="email" id="email-label">Email: </label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email" required>
                 <label for="Number" id="number-label">How many years NCD are you entitled to? </label>
-                <input type="number" name="number" id="number" min="0" max="10" placeholder="Years NCD">
-                
+                <input type="number" name="number" id="number" min="0" max="10" placeholder="Years NCD" class="form-control">
+            </div>
+            <div class="form-group">
+                <p>How experienced a driver are you?</p>
+                <select name="ability" id="dropdown" class="form-control">
+                    <option disabled selected value>Rate your driving ability</option>
+                    <option value="newdriver">I am a new driver</option>
+                    <option value="experienced">I am an experienced driver</option>
+                    <option value="legendary">I am a legendary driver</option>
+                    <option value="legend">I am a leg-end</option>
+               </select>
+            </div>
+            <div class="form-group">
+                <p>Who was deemed at fault?</p>
+                <fieldset>
+                    <legend>Which party was deemed at fault?</legend>
+                    <label for="me">Me</label>
+                    <input type="radio" name="fault" id="me" value="me">
+                    <label for="other">The other party</label>
+                    <input type="radio" name="fault" id="other" value="other">
+                    <label for="third">A third party</label>
+                    <input type="radio" name="fault" id="third" value="third">
+                    <label for="n-a">No other part involved</label>
+                    <input type="radio" name="fault" id="n-a" value="n-a">
+                </fieldset>
+                <p>Please check any medical conditions that apply.</p>
+                <label for=""><input type="checkbox" name="" id=""></label>
             </div>
             <div class="form-group">
                 <p>Describe the incident:</p>
-                <textarea name="" id="" cols="30" rows="10">text</textarea>
+                <textarea name="" id="" cols="30" rows="10" class="form-control">text</textarea>
             </div>
             <div class="form-group">
-                <button type="submit" id="submit">Submit</button>
+                <button type="submit" id="submit" class="form-control">Submit</button>
             </div>
         </form>     
     </div>
