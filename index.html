@@ -33,20 +33,21 @@
                </select>
             </div>
             <div class="form-group">
-                <p>Who was deemed at fault?</p>
                 <fieldset>
                     <legend>Which party was deemed at fault?</legend>
-                    <label for="me">Me</label>
-                    <input type="radio" name="fault" id="me" value="me">
-                    <label for="other">The other party</label>
-                    <input type="radio" name="fault" id="other" value="other">
-                    <label for="third">A third party</label>
-                    <input type="radio" name="fault" id="third" value="third">
-                    <label for="n-a">No other part involved</label>
-                    <input type="radio" name="fault" id="n-a" value="n-a">
+                    <label for="me"><input type="radio" name="fault" id="me" value="me" class="radio">Me</label>
+                    <label for="other"><input type="radio" name="fault" id="other" value="other" class="radio">The other party</label>
+                    <label for="third"><input type="radio" name="fault" id="third" value="third" class="radio">A third party</label>
+                    <label for="n-a"><input type="radio" name="fault" id="n-a" value="n-a" class="radio">No other part involved</label>
                 </fieldset>
-                <p>Please check any medical conditions that apply.</p>
-                <label for=""><input type="checkbox" name="" id=""></label>
+                <fieldset>
+                    <legend>Do you have any medical conditions?</legend>
+                    <label for="vision"><input type="checkbox" name="vision" id="vision" value="vision">Poor vision</label>
+                    <label for="sleep"><input type="checkbox" name="sleep" id="sleep" value="sleep">Sleep disorder</label>
+                    <label for="heart"><input type="checkbox" name="heart" id="heart" value="heart">Heart condition</label>
+                    <label for="ginger"><input type="checkbox" name="ginger" id="ginger" value="ginger">Gingerness</label>
+                </fieldset>
+                
             </div>
             <div class="form-group">
                 <p>Describe the incident:</p>
